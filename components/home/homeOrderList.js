@@ -1,7 +1,7 @@
 "use strict";
 import "./homeOrderList.sass";
 import React from "react";
-import { HomeOrderListItem } from './homeOrderListItem.js';
+import { HomeOrderListItem } from "./homeOrderListItem.js";
 const FAKE_ORDER_LIST = [
     {
         id: 1,
@@ -26,7 +26,7 @@ const FAKE_ORDER_LIST = [
 export class HomeOrderList extends React.Component {
     render() {
         const orders = FAKE_ORDER_LIST;
-        const items = orders.map((order, index) => (<li key={index}><h1>{order.name}</h1></li>));
+        const items = orders.map((order, index) => (<li key={index}><HomeOrderListItem order={order}/></li>));
         return (
             <section id="home-order-list">
                 <h1>Order List</h1>

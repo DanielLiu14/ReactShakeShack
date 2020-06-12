@@ -1,5 +1,6 @@
 "use strict";
 import React from "react";
+import "./homeOrderListItem.sass";
 export class HomeOrderListItem extends React.Component {
     render() {
         const order = this.props.order;
