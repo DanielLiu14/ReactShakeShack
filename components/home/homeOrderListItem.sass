@@ -1,6 +1,33 @@
 @import "../_constants.sass"
 
 #home-order-list-item
+    & div
+        border-bottom: 1px solid 
+        border-color: $colorLightGray
     & span
         display: inline-block
-        border-bottom: 1px solid
+        padding: 20px 0px 
+
+        &.home-row-id
+            width: 100px
+        
+        &.home-row-name
+            width: 200px
+        
+        &.home-row-food
+            width: 200px
+
+        &.home-row-num
+            width: 100px
+    & button
+        background-color: $colorRed
+        filter: brightness(1.1)
+        cursor: pointer
+        font-size: 14px
+        border: none
+        outline: none
+        border-radius: 6px
+        width: 100px
+        height: 33px
+        color: $colorWhite
+

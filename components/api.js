@@ -2,7 +2,7 @@
 import { getSavedOrders } from "./localStorage.js";
 
 const API_WORKS = true; // turn this into false to see what happens
-const API_WAIT_TIME_MS = 1100; // Wait time in milliseconds
+const API_WAIT_TIME_MS = 1000; // Wait time in milliseconds
 
 function fetchOrders() {
     var promise = new Promise(function(resolve, reject) {
